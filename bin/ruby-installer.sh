@@ -2,11 +2,11 @@
 
 export RBENV_ROOT="${OPENSHIFT_DATA_DIR}.rbenv"
 export RBENV_INIT="${OPENSHIFT_DATA_DIR}rbenv-init.sh"
-export RUBY_VERSION="2.0.0-p353"
+export RUBY_VERSION="2.3.0"
 
 if [ ! -d "${RBENV_ROOT}" ] ; then
 
-    curl https://raw.github.com/fesplugas/rbenv-installer/master/bin/rbenv-installer | bash
+    curl https://raw.githubusercontent.com/fesplugas/rbenv-installer/master/bin/rbenv-installer | bash
 
     echo "gem: --no-rdoc --no-ri" > ${OPENSHIFT_DATA_DIR}.gemrc
 
