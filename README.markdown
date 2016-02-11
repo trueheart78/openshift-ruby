@@ -55,7 +55,7 @@ You can delete the key at any time by running 'rhc logout'.
 Generate a token now? (yes|no) yes
 
 Generating an authorization token for this client ... lasts about 1 day
-Saving configuration to /home/codecase/.openshift/express.conf ... done
+Saving configuration to /home/th78/.openshift/express.conf ... done
 
 Your public SSH key must be uploaded to the OpenShift server to access code.  Upload now? (yes|no) yes
 Since you do not have any keys associated with your OpenShift account,
@@ -65,7 +65,7 @@ Uploading key 'default' ... done
 
 Checking for git ... found git version 1.8.2.1
 Checking common problems .. done
-Checking your namespace ... codecase
+Checking your namespace ... th78
 Checking for applications ... none
 
 Run 'rhc app create' to create your first application.
@@ -101,9 +101,9 @@ Your client tools are now configured.
 ```
 Application Options
 -------------------
-Namespace:   codecase
+Namespace:   th78
 Cartridges:  diy-0.1
-Source Code: git://github.com/subosito/openshift-ruby.git
+Source Code: git://github.com/trueheart78/openshift-ruby.git
 Gear Size:   default
 Scaling:     no
 
@@ -117,13 +117,13 @@ Warning: Permanently added the RSA host key for IP address '75.101.228.201' to t
 
 Your application code is now in 'ruby'
 
-ruby @ http://ruby-codecase.rhcloud.com/ (uuid: 517731fa500446288b00004a)
+ruby @ http://ruby-th78.rhcloud.com/ (uuid: 517731fa500446288b00004a)
 -------------------------------------------------------------------------
 Created:         8:14 AM
 Gears:           1 (defaults to small)
 Git URL:         ssh://517731fa500446288b00004a@ruby-th78.rhcloud.com/~/git/ruby.git/
 Initial Git URL: git://github.com/trueheart78/openshift-ruby.git
-SSH:             517731fa500446288b00004a@ruby-codecase.rhcloud.com
+SSH:             517731fa500446288b00004a@ruby-th78.rhcloud.com
 
 diy-0.1 (Do-It-Yourself)
 ------------------------
@@ -242,7 +242,7 @@ remote: Gems in the groups test and development were not installed.
 remote: It was installed into ./vendor/bundle
 remote: hot_deploy_added=false
 remote: Done
-To ssh://517731fa500446288b00004a@ruby-codecase.rhcloud.com/~/git/ruby.git/
+To ssh://517731fa500446288b00004a@ruby-th78.rhcloud.com/~/git/ruby.git/
 b8c4fa6..fa06f24  master -> master
 ```
 
