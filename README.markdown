@@ -1,6 +1,6 @@
 # Openshift Ruby
 
-Installer and action hooks for Openshift Do-it-Yourself (DIY) for installing Ruby 2.0.0-p353 via Rbenv and running simple Sinatra application through Thin.
+Installer and action hooks for Openshift Do-it-Yourself (DIY) for installing Ruby 2.X via Rbenv and running a simple Sinatra application through Thin.
 
 ## URL
 
@@ -17,7 +17,7 @@ http://ruby-codecase.rhcloud.com/
 
 ## Step by Step
 
-In order to make Openshift support Ruby 2.0, we need to set the working environment, here's how:
+In order to make Openshift support Ruby 2.X, we need to set the working environment, here's how:
 
 ### 01. Installing Openshift client
 
@@ -99,7 +99,7 @@ Your client tools are now configured.
 ### 03. Create Openshift DIY application
 
 ``` bash
-% rhc app create ruby diy-0.1 --from-code git://github.com/subosito/openshift-ruby.git
+% rhc app create ruby diy-0.1 --from-code git://github.com/trueheart78/openshift-ruby.git
 ```
 
 ```
@@ -125,8 +125,8 @@ ruby @ http://ruby-codecase.rhcloud.com/ (uuid: 517731fa500446288b00004a)
 -------------------------------------------------------------------------
 Created:         8:14 AM
 Gears:           1 (defaults to small)
-Git URL:         ssh://517731fa500446288b00004a@ruby-codecase.rhcloud.com/~/git/ruby.git/
-Initial Git URL: git://github.com/codecase/openshift-ruby.git
+Git URL:         ssh://517731fa500446288b00004a@ruby-th78.rhcloud.com/~/git/ruby.git/
+Initial Git URL: git://github.com/trueheart78/openshift-ruby.git
 SSH:             517731fa500446288b00004a@ruby-codecase.rhcloud.com
 
 diy-0.1 (Do-It-Yourself)
@@ -145,7 +145,7 @@ and middleware on Openshift.
 We need to log in into Openshift box to install ruby. You can issue `ssh` command.
 
 ```bash
-% ssh 517731fa500446288b00004a@ruby-codecase.rhcloud.com
+% rhc ssh -a ruby
 ```
 
 ```
@@ -180,7 +180,7 @@ _Because of installing ruby takes minutes to complete, I usually run it inside t
 ```
 
 ```bash
-[517731fa500446288b00004a]$ cd $OPENSHIFT_REPO_DIR
+[517731fa500446288b00004a]$ cd app-root/repo
 [repo]$ ./bin/ruby-installer.sh
 ```
 
@@ -197,10 +197,10 @@ Receiving objects: 100% (1618/1618), 233.35 KiB, done.
 .......... some outputs omitted ................
 ................................................
 
-Downloading ruby-2.0.0-p353.tar.gz...
--> http://ftp.ruby-lang.org/pub/ruby/2.0/ruby-2.0.0-p353.tar.gz
-Installing ruby-2.0.0-p353...
-Installed ruby-2.0.0-p353 to /var/lib/openshift/517731fa500446288b00004a/app-root/data/.rbenv/versions/2.0.0-p353
+Downloading ruby-2.3.tar.gz...
+-> http://ftp.ruby-lang.org/pub/ruby/2.3/ruby-2.3.0.tar.gz
+Installing ruby-2.3.0...
+Installed ruby-2.3.0 to /var/lib/openshift/517731fa500446288b00004a/app-root/data/.rbenv/versions/2.3.0
 
 Fetching: bundler-1.3.5.gem (100%)
 Successfully installed bundler-1.3.5
