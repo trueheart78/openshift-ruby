@@ -2,10 +2,6 @@
 
 Installer and action hooks for Openshift Do-it-Yourself (DIY) for installing Ruby 2.X via Rbenv and running a simple Sinatra application through Thin.
 
-## URL
-
-http://ruby-codecase.rhcloud.com/
-
 ## References
 
 - [Openshift](https://openshift.redhat.com/)
